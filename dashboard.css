@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: #F0C27B;
+    background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);
+    background: linear-gradient(to right, #4B1248, #F0C27B);
+}
+nav{
+    background: #780206; 
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    background: linear-gradient(to right, #061161, #780206); 
+    height: 80px;
+    width: 100%;
+    border: 2px solid black;
+}
+label.Name{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.button{
+    background:black;
+    height: 100%;
+    width: 200%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.button:hover{
+    background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    transition: all 0.5s ease;
+}
+a.active,a:hover{
+    background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+
