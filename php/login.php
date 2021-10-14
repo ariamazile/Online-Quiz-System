@@ -67,33 +67,3 @@ if(isset($_POST["submit1"]))
         <?php
     }
 }  
-/*if(isset($_POST["submit1"]))
-{
-    $count=0;
-    $res=mysqli_query("SELECT * from students where username='$_POST[username]' && password='$_POST[password]'");
-    header('Location:header.php');
-    echo $res;
-    $count=mysqli_num_rows($res);
-    
-    if($count==0)
-    
-    {
-
-        ?>
-        <script type="text/javascript">
-             document.getElementById("failure").style.display="block";
-        </script>
-        <?php
-
-    }
-    else
-    {
-        
-            ?>
- <script type="text/javascript">
-    window.location="header.php"
-</script> 
-        <?php
-    }
-}*/
-    ?>
