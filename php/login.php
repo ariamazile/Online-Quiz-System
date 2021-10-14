@@ -1,20 +1,12 @@
 <?php
-require_once "conn/connection.php";
+require "connection.php";
 ?>
-
-<div style = "margin: 0;
-    padding: 0;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;"> <img src = "img/um.jpeg" height="600" width="900" > </div>
-    
 <!doctype html>
 <html lang="en" dir="ltr" >
     <head>   
 <meta charset="utf-8">
 <title>User Login</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div style = "margin: 0;
@@ -22,7 +14,7 @@ require_once "conn/connection.php";
     text-align: center;
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;"> <img src = "img/um2.jpg" height="600" width="900" > </div>
+    background-repeat: no-repeat;"> <img src = "../image/um2.jpg" height="600" width="900" > </div>
 
     <div class="center">
         <h1>Sign In</h1>
@@ -52,13 +44,14 @@ if(isset($_POST["submit1"]))
 {
     $count=0;
     $res=mysqli_query($link," SELECT * from students where username='$_POST[username]' && password='$_POST[password]'");
-    echo $res;
+    header('Location:dashboardstudent.html');
     $count=mysqli_num_rows($res);
     
     if($count==0)
     {
-
+        
         ?>
+        
         <script type="text/javascript">
              document.getElementById("failure").style.display="block";
         </script>
@@ -74,4 +67,33 @@ if(isset($_POST["submit1"]))
         <?php
     }
 }  
+/*if(isset($_POST["submit1"]))
+{
+    $count=0;
+    $res=mysqli_query("SELECT * from students where username='$_POST[username]' && password='$_POST[password]'");
+    header('Location:header.php');
+    echo $res;
+    $count=mysqli_num_rows($res);
+    
+    if($count==0)
+    
+    {
+
+        ?>
+        <script type="text/javascript">
+             document.getElementById("failure").style.display="block";
+        </script>
+        <?php
+
+    }
+    else
+    {
+        
+            ?>
+ <script type="text/javascript">
+    window.location="header.php"
+</script> 
+        <?php
+    }
+}*/
     ?>
