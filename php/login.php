@@ -26,12 +26,12 @@ include "conn/connection.php";
         <h1>Sign In</h1>
         <form method ="POST">
          <div class="txt_field">
-             <input type="text" required>
+             <input  type="text" title="Please enter you username" required="" value="" name="username" id="username" class="form-control"> 
              <span></span>
              <label>Username</label>
          </div> 
          <div class="txt_field">
-            <input type="password" required>
+            <input type="password" title="Please enter your password" required="" value="" name="password" id="password" class="form-control">
             <span></span>
             <label>Password</label>
         </div>
@@ -51,13 +51,13 @@ include "conn/connection.php";
                     <div class="panel-body">
                         <form action="#" name="form1" method="post">
                             <div class="form-group">
-                                <label class="control-label1" for="username"></label>
-                                <input class="txt_field" type="text" placeholder="username" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
+                                <label class="control-label" for="username"></label>
+                                <input  type="text" placeholder="username" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
 
                             </div>
                             <div class="form-group">
-                                <label class="control-label2" for="password"></label>
-                                <input class="txt_field" type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
+                                <label class="control-label" for="password"></label>
+                                <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
 
                             </div>
 
