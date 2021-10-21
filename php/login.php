@@ -1,5 +1,5 @@
 <?php
-include "conn/connection.php";
+include "connection.php";
 ?>
 
 <!doctype html>

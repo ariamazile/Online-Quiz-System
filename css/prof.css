@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 body{
     margin: 0;
     padding: 0;
-    font-family: "Robboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 header{
@@ -23,7 +24,7 @@ header{
 
 .logout_btn{
     padding: 10px 20px;
-    background: none;
+    background: black;
     text-decoration: none;
     float: right;
     margin-top: -10px;
@@ -34,10 +35,13 @@ header{
     color: #fff;
     transition: 0.5s;
     transition-property: Background;
+
 }
 
 .logout_btn:hover{
-    background: #0D9DBB;
+    background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
 }
 
 .sidebar{
@@ -78,7 +82,9 @@ header{
 }
 
 .sidebar a:hover{
-    background: #19B3D3;
+    background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
 }
 
 .sidebar i{
@@ -97,7 +103,9 @@ label #sidebar_btn{
 }
 
 label #sidebar_btn:hover{
-    color: #19B3D3;
+    background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
 }
 
 #check:checked ~ .sidebar{

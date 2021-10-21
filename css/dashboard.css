@@ -1,66 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
-*{
-    padding:0;
-    margin:0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-
-}
 body{
+    margin: 0;
+    padding: 0;
     font-family: "Poppins", sans-serif;
-    background: #F0C27B;
-    background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);
-    background: linear-gradient(to right, #4B1248, #F0C27B);
 }
-nav{
-    background: #780206; 
-    background: -webkit-linear-gradient(to right, #061161, #780206);
-    background: linear-gradient(to right, #061161, #780206); 
-    height: 80px;
+
+header{
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
     width: 100%;
-    border: 2px solid black;
+    height: 30px;
 }
-label.Name{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding:0 100px;
-    font-weight: bold;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 20px;
-}
-nav ul li a{
-    color: white;
-    font-size: 17px;
+
+.left_area h3{
+    color: #fff;
+    margin: 0;
     text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
 }
-.button{
-    background:black;
-    height: 100%;
-    width: 200%;
+
+
+.logout_btn{
     padding: 10px 20px;
+    background: black;
+    text-decoration: none;
+    float: right;
+    margin-top: -10px;
+    margin-right: 40px;
     border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: Background;
+
 }
-.button:hover{
+
+.logout_btn:hover{
     background: #aa4b6b;
     background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
     background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
-    transition: all 0.5s ease;
 }
-a.active,a:hover{
+
+.sidebar{
+    background: #2f323a;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left; 
+}
+
+.sidebar .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar h4{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover{
     background: #aa4b6b;
     background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
     background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
-    transition: all 0.5s ease;
-    border-radius: 5px;
 }
 
+.sidebar i{
+    padding-right: 10px;
+}
 
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~.sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
