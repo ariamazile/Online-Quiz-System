@@ -1,4 +1,13 @@
 <?php
-$link=mysqli_connect("localhost","root","");
-mysqli_select_db($link,"online_quizdb");
-?>
+
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "online_quizdb";
+
+$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+if(!$con)
+{
+
+	die("failed to connect!");
+}
