@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2021 at 03:27 PM
+-- Generation Time: Oct 22, 2021 at 04:17 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -31,8 +31,8 @@ CREATE TABLE `admin` (
   `professor_id` int(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `date_time_created` date NOT NULL DEFAULT current_timestamp(),
-  `date_time_updated` date NOT NULL DEFAULT current_timestamp()
+  `date_time_created` datetime NOT NULL DEFAULT current_timestamp(),
+  `date_time_updated` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -40,8 +40,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`professor_id`, `username`, `password`, `date_time_created`, `date_time_updated`) VALUES
-(1, 'admin', 'admin', '2021-10-22', '2021-10-22'),
-(2, 'austine', 'austinepogi', '2021-10-22', '2021-10-22');
+(1, 'admin', 'admin', '2021-10-22 00:00:00', '2021-10-22 00:00:00'),
+(2, 'austine', 'austinepogi', '2021-10-22 00:00:00', '2021-10-22 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -54,8 +54,8 @@ CREATE TABLE `questions` (
   `question` varchar(80) NOT NULL,
   `answer` text NOT NULL,
   `points` int(50) NOT NULL,
-  `date_time_created` date NOT NULL DEFAULT current_timestamp(),
-  `date_time_updated` date NOT NULL DEFAULT current_timestamp()
+  `date_time_created` datetime NOT NULL DEFAULT current_timestamp(),
+  `date_time_updated` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -63,8 +63,8 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`question_id`, `question`, `answer`, `points`, `date_time_created`, `date_time_updated`) VALUES
-(1, 'what is php?', 'PHP is a general-purpose scripting language geared towards web development.', 1, '2021-10-22', '2021-10-22'),
-(2, 'acronym of PHP', 'Hypertext Preprocessor', 1, '2021-10-22', '2021-10-22');
+(1, 'what is php?', 'PHP is a general-purpose scripting language geared towards web development.', 1, '2021-10-22 00:00:00', '2021-10-22 00:00:00'),
+(2, 'acronym of PHP', 'Hypertext Preprocessor', 1, '2021-10-22 00:00:00', '2021-10-22 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -112,8 +112,8 @@ CREATE TABLE `students` (
   `last_name` varchar(50) NOT NULL,
   `year_and_course` varchar(50) NOT NULL,
   `contact_number` int(12) NOT NULL,
-  `date_time_created` date NOT NULL DEFAULT current_timestamp(),
-  `date_time_updated` date NOT NULL DEFAULT current_timestamp()
+  `date_time_created` datetime NOT NULL DEFAULT current_timestamp(),
+  `date_time_updated` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -121,8 +121,8 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`student_id`, `username`, `password`, `first_name`, `middle_name`, `last_name`, `year_and_course`, `contact_number`, `date_time_created`, `date_time_updated`) VALUES
-(1, '1801023', '123456', 'john raizen', 'gatdula', 'alabata', '3rd year - BSCS', 956617608, '2021-10-22', '2021-10-22'),
-(2, '1901508', '123456', 'vincent', 'bactad', 'pagdato', '3rd year - BSCS', 995348593, '2021-10-22', '2021-10-22');
+(1, '1801023', '123456', 'john raizen', 'gatdula', 'alabata', '3rd year - BSCS', 956617608, '2021-10-22 00:00:00', '2021-10-22 00:00:00'),
+(2, '1901508', '123456', 'vincent', 'bactad', 'pagdato', '3rd year - BSCS', 995348593, '2021-10-22 00:00:00', '2021-10-22 00:00:00');
 
 -- --------------------------------------------------------
 
