@@ -39,41 +39,6 @@ include "connection.php";
 
         </form>
     </div>
-    <!--<div class="center">
-	<div class="error-pagewrap">
-		<div class="error-page-int">
-			<div class="text-center m-b-md custom-login">
-				
-
-			</div>
-			<div class="content-error">
-				<div class="hpanel">
-                    <div class="panel-body">
-                        <form action="#" name="form1" method="post">
-                            <div class="form-group">
-                                <label class="control-label" for="username"></label>
-                                <input  type="text" placeholder="username" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
-
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="password"></label>
-                                <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
-
-                            </div>
-
-                            <button type="submit" name="sign in" class="Signinbtn">Sign In</button>
-
-                            <div class="alert alert-danger" id="failure" style="margin-top: 10px; display: none">
-                                <strong>Does Not Match!</strong> Invalid Username or Password.
-                            </div>
-                        </form>
-                    </div>
-                </div>
-			</div>
-
-		</div>   
-    </div>-->
-    </div>
 <?php
 if(isset($_POST["login"]))
 {
@@ -85,15 +50,15 @@ if(isset($_POST["login"]))
     if($count==0)
     {
         ?>
-        <script type="text/javascript">
+    <script type="text/javascript">
              document.getElementById("failure").style.display="block";
         </script>
         <?php
     }
     else{
         ?>
-<script type="text/javascript">
-    window.location="demo.php"
+<!--<script type="text/javascript">-->
+    header('Location: header.php');
 </script>
         <?php
     }
