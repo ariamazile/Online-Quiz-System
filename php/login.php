@@ -44,3 +44,34 @@ require_once "connection.php";
         </div>
         </form>
     </div>
+</body>
+</html>
+
+<?php
+if(isset($_POST["login"]))
+{
+    $count=0;
+    $res=mysqli_query($link," SELECT * from students where username='$_POST[username]' && password='$_POST[password]'");
+
+    $count=mysqli_num_rows($res);
+
+    if($count==0)
+    {
+
+        ?>
+        <script type="text/javascript">
+             document.getElementById("failure").style.display="block";
+        </script>
+        <?php
+
+    }
+    else{
+        
+        ?>
+<script type="text/javascript">
+    window.location="header.php"
+</script>
+        <?php
+    }
+}  
+    ?>
