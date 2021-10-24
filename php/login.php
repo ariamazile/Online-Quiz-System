@@ -1,5 +1,5 @@
 <?php
-require_once "conn/connection.php";
+require_once "../conn/connection.php";
 ?>
 
 <!doctype html>
@@ -12,8 +12,8 @@ require_once "conn/connection.php";
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css1/bootstrap.min.css">
-    <link rel="stylesheet" href="css1/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@ require_once "conn/connection.php";
     text-align: center;
     height: 1% ;
     width: 50% center;
-    background-repeat: no-repeat;"> <img src = "img/um2.jpg" height="250" width="250" > </div>
+    background-repeat: no-repeat;"> <img src = "../image/um2.jpg" height="250" width="250" > </div>
     
 	<div class="error-pagewrap">
 		<div class="error-page-int">
@@ -35,17 +35,17 @@ require_once "conn/connection.php";
                     <div class="panel-body">
                         <form action="#" name="form1" method="post">
                             <div class="form-group">
-                                <label class="control-label" for="username">Username</label>
-                                <input type="text" placeholder="username" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
+                                <label class="txt_field" class="control-label" for="username">Username</label>
+                                <input type="text" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">
 
                             </div>
                             <div class="form-group">
-                                <label class="control-label" for="password">Password</label>
-                                <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
+                                <label class="txt_field" class="control-label" for="password">Password</label>
+                                <input type="password" title="Please enter your password"  required="" value="" name="password" id="password" class="form-control">
 
                             </div>
 
-                            <button type="submit" name="login" class="btn btn-success btn-block loginbtn">Login</button>
+                            <button type="submit" name="login" class="btn btn-success btn-block loginbtn">Sign In</button>
                            
 
                             <div class="alert alert-danger" id="failure" style="margin-top: 10px; display: none">
@@ -84,7 +84,7 @@ if(isset($_POST["login"]))
     }
 }  
     ?>
-    <script src="css1/bootstrap.min.js"></script>
+    <script src="..//bootstrap.min.js"></script>
 
 </body>
 
