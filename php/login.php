@@ -84,7 +84,7 @@ if(isset($_POST["login"]))
     }
 }  
     ?>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="css1/bootstrap.min.js"></script>
 
 </body>
 
