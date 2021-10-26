@@ -17,9 +17,9 @@ require_once "../conn/connection.php";
 
 <body>
 <div style = "margin: 0;
-    padding: 0;
+    padding: 10px;
     text-align: center;
-    height: 1% ;
+    height: 10% ;
     width: 50% center;
     background-repeat: no-repeat;"> <img src = "../image/um2.jpg" height="700" width="1000" > </div>
     
@@ -45,7 +45,7 @@ require_once "../conn/connection.php";
                             </div>
                             <button type="submit" name="login" class="btn btn-success btn-block loginbtn">Sign In</button>
                             <div class="alert alert-danger" id="failure" style="margin-top: 10px; display: none">
-                                <strong>Does Not Match!</strong><p>Invalid Username or Password.</p>
+                                <strong>Does Not Match!</strong>  <p>Invalid Username or Password.</p>
                             </div>
                         </form>
                     </div>
