@@ -17,7 +17,7 @@ include "../conn/connection.php";
 
 <body>
 <div style = "margin: 0;
-    padding: 10;
+    padding: 10px;
     text-align: center;
     height: 10% ;
     width: 50% center;

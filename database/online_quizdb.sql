@@ -111,7 +111,7 @@ CREATE TABLE `students` (
   `middle_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `year_and_course` varchar(50) NOT NULL,
-  `contact_number` int(12) NOT NULL,
+  `contact_number` VARCHAR(15) NOT NULL,
   `date_time_created` datetime NOT NULL DEFAULT current_timestamp(),
   `date_time_updated` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -122,8 +122,8 @@ CREATE TABLE `students` (
 
 INSERT INTO `students` (`student_id`, `username`, `password`, `first_name`, `middle_name`, `last_name`, `year_and_course`, `contact_number`, `date_time_created`, `date_time_updated`) VALUES
 (1, '1801023', '123456', 'john raizen', 'gatdula', 'alabata', '3rd year - BSCS', 956617608, '2021-10-22 00:00:00', '2021-10-22 00:00:00'),
-(2, '1901508', '123456', 'vincent', 'bactad', 'pagdato', '3rd year - BSCS', 995348593, '2021-10-22 00:00:00', '2021-10-22 00:00:00');
-
+(2, '1901508', '123456', 'vincent', 'bactad', 'pagdato', '3rd year - BSCS', 995348593, '2021-10-22 00:00:00', '2021-10-22 00:00:00'),
+(4, 'Maria Eliza', '123123', 'Maria Eliza' , 'Lopez', 'Berja', '3rd year BSCS-A', '09871343413', '2021-10-26 22:16:01', '2021-10-26 22:16:01');
 -- --------------------------------------------------------
 
 --
