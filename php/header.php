@@ -17,7 +17,7 @@
             <h3></h3>
         </div>
         <div class="right_area">
-            <a href="#" class="logout_btn">Log out</a>
+            <a href="login.php" class="logout_btn">Log out</a>
         </div>
     </header>
     
