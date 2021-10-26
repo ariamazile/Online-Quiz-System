@@ -8,7 +8,7 @@ require_once "../conn/connection.php";
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Log In</title>
+    <title>Admin LogIn</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,7 @@ require_once "../conn/connection.php";
 
 <body>
 <div style = "margin: 0;
-    padding: 10px;
+    padding: 10;
     text-align: center;
     height: 10% ;
     width: 50% center;
