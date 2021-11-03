@@ -1,6 +1,6 @@
 <?php
 include "header.php";
-include "connection.php";
+include "../conn/connection.php";
 ?>
 
                     <div class="page-title">
