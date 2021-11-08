@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2021 at 01:36 PM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 8.0.9
+-- Generation Time: Nov 08, 2021 at 05:12 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -51,20 +51,17 @@ INSERT INTO `admin` (`professor_id`, `username`, `password`, `date_time_created`
 
 CREATE TABLE `questions` (
   `question_id` int(50) NOT NULL,
+  `question_no` varchar(50) NOT NULL,
   `question` varchar(80) NOT NULL,
+  `choices1` varchar(50) NOT NULL,
+  `choices2` varchar(50) NOT NULL,
+  `choices3` varchar(50) NOT NULL,
+  `choices4` varchar(50) NOT NULL,
   `answer` text NOT NULL,
-  `points` int(50) NOT NULL,
+  `title` varchar(50) NOT NULL,
   `date_time_created` datetime NOT NULL DEFAULT current_timestamp(),
   `date_time_updated` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `questions`
---
-
-INSERT INTO `questions` (`question_id`, `question`, `answer`, `points`, `date_time_created`, `date_time_updated`) VALUES
-(1, 'what is php?', 'PHP is a general-purpose scripting language geared towards web development.', 1, '2021-10-22 00:00:00', '2021-10-22 00:00:00'),
-(2, 'acronym of PHP', 'Hypertext Preprocessor', 1, '2021-10-22 00:00:00', '2021-10-22 00:00:00');
 
 -- --------------------------------------------------------
 
