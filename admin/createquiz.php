@@ -2,8 +2,17 @@
 include "../admin/header.php";
 include "../conn/connection.php";
 ?>
-
-                    <div class="page-title">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/questionnaire.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="page-title">
                         <h1>Add Exam</h1>
                     </div>
     
@@ -16,8 +25,9 @@ include "../conn/connection.php";
                                         <input type="submit" name="submit1" value="Add Exam" class="btn-btn-success">
                                     </div>                           
 
-                            </div>
-
+                            </div>   
+</body>
+</html>
 <?php
     if(isset($_POST["submit1"]))
     {
