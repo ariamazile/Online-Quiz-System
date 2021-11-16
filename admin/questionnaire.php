@@ -64,3 +64,55 @@
     }
 
     ?>
+
+<div class="row">
+<div class="col-lg-12">
+<div class="card">
+<div class="card-body">
+    <table class="table table-bordered">
+        <tr>
+            <th>No</th>
+            <th>Questions</th>
+            <th>Choices1</th>
+            <th>Choices2</th>
+            <th>Choices3</th>
+            <th>Choices4</th>
+            <th>Edit</th>
+            <th>Delete</th>
+</tr>
+
+
+    <?php
+    $res=mysqli_query($link," SELECT * from questions where title='$exam_name' order by question_no asc");
+    while($row=mysqli_fetch_array($res))
+    {
+        echo "<tr>";
+        echo "<td>"; echo $row["question_no"]; echo "</td>";
+        echo "<td>"; echo $row["question"]; echo "</td>";
+        echo "<td>"; echo $row["choices1"]; echo "</td>";
+        echo "<td>"; echo $row["choices2"]; echo "</td>";
+        echo "<td>"; echo $row["choices3"]; echo "</td>";
+        echo "<td>"; echo $row["choices4"]; echo "</td>";
+echo "<td>";
+
+    ?>
+        <a href="editquestion.php?id=<?php echo $row["question_id"]; ?>&id1=<?php echo $quiz_id; ?>">Edit</a>
+    <?php
+
+echo "</td>";
+
+echo "<td>";
+
+    ?>
+        <a href="deletequestion.php?id=<?php echo $row["question_id"]; ?>&id1=<?php echo $quiz_id; ?> ">Delete</a>
+    <?php
+
+echo "</td>";
+        echo "</tr>";
+    }
+    ?>
+    </table>    
+</div>    
+</div>
+</div>
+</div>
