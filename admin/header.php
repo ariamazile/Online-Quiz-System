@@ -31,8 +31,12 @@
             </center>
             <a href="../admin/header.php"><i class="fas fa-chalkboard"></i><span>Dashboard</span></a>
             <a href="../admin/createquiz.php"><i class="fas fa-plus-square"></i><span>Create Quiz</span></a>
+<<<<<<< HEAD
             <a href="../admin/selectquestionnaire.php"><i class="fas fa-tasks"></i></i><span>Manage Questionnaire</span></a>
             <a href="../admin/editquiz.php"><i class="fas fa-edit"></i><span>Add & Edit Quiz</span></a>
+=======
+            <a href="../admin/selectquestionnaire.php"><i class="fas fa-plus-square"></i><span>Manage Questionnaire</span></a>
+>>>>>>> 1f5eb2afc4e41bfab517f647783888af96452e91
             <a href="../admin/postedquiz.php"><i class="fas fa-upload"></i><span>Posted Quiz</span></a>
             <a href="../admin/completedquiz.php"><i class="fas fa-check-double"></i><span>Completed Quiz</span></a>
         </div>

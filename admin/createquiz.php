@@ -2,6 +2,7 @@
 include "../admin/header.php";
 include "../conn/connection.php";
 ?>
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,11 @@ include "../conn/connection.php";
 </head>
 <body>
 <div class="page-title">
+=======
+
+          
+                    <div class="page-title">
+>>>>>>> 1f5eb2afc4e41bfab517f647783888af96452e91
                         <h1>Add Exam</h1>
                    
                     <form name="form1" action="" method="post">
@@ -30,13 +36,49 @@ include "../conn/connection.php";
 <?php
     if(isset($_POST["submit1"]))
     {
-        mysqli_query($link,"insert into quiz values(NULL,'$_POST[exam_name]','$_POST[quiz_time_in_minutes]')") or die(mysqli_error($link));
+        mysqli_query($link,"INSERT into quiz values(NULL,'$_POST[exam_name]','$_POST[quiz_time_in_minutes]')") or die(mysqli_error($link));
 
         ?>
         <script type="text/javascript">
-            alert("exam added successfully");
+            alert("quiz title added successfully");
             window.location.href=window.location.href;
         </script>
         <?php
     }
+?>
+
+
+                         
+
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Quiz Name</th>
+                <th scope="col">Quiz Time</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+
+<?php
+$count=0;
+$res=mysqli_query($link,"SELECT * from quiz");
+while($row=mysqli_fetch_array($res))
+{
+$count=$count+1;
+    ?>
+     <tr>
+        <th scope="row"><?php echo $count; ?> </th>
+        <td><?php echo $row["exam_name"]; ?> </td>
+        <td><?php echo $row["quiz_time_in_minutes"]; ?> </td>    
+        <td><a href="editbtn.php?id=<?php echo $row["quiz_id"]; ?>">Edit</td>
+        <td><a href="deletebtn.php?id=<?php echo $row["quiz_id"]; ?>">Delete</a></td>
+    </tr>
+
+    <?php
+}
+
 ?>
