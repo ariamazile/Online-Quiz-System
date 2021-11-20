@@ -8,24 +8,23 @@ include "../conn/connection.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/questionnaire.css">
+    <link rel="stylesheet" href="../css/createquiz.css">
     <title>Document</title>
 </head>
 <body>
 <div class="page-title">
                         <h1>Add Exam</h1>
-                    </div>
-    
-
-                            <form name="form1" action="" method="post">
-                            <div class="card-header"><strong>Add Exam</strong>
+                   
+                    <form name="form1" action="" method="post">
+                            <div class="card-header"><strong></strong>
                                 <div class="form-group"><label for="exam_name" class=" form-control-label">New Exam </label><input type="text" name="exam_name" placeholder="Add Exam Categories" class="form-control"></div>
                                     <div class="form-group"><label for="quiz_time_in_minutes" class=" form-control-label">Exam Time</label><input type="text"  placeholder="Quiz Time In Minutes" class="form-control" name="quiz_time_in_minutes"></div>
                                     <div class="form-group">
-                                        <input type="submit" name="submit1" value="Add Exam" class="btn-btn-success">
+                                        
                                     </div>                           
-
+                                    </div>
                             </div>   
+                            <div><input type="submit" name="submit1" value="Add Exams" class="btn-btn-success"></div>
 </body>
 </html>
 <?php

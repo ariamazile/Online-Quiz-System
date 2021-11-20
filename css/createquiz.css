@@ -118,3 +118,34 @@ body{
     border-color: white;
     border-bottom: 2px gray solid;
 }
+.page-title {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  left: 35%;
+  background: white;
+  border-radius: 25px;
+  border: 5px solid black;
+  height: 400px;
+  width: 600px;
+}
+.btn-btn-success{
+    position: absolute;
+    top: 60%;
+    left: 53%;
+    padding: 10px 20px;
+    background: black;
+    text-decoration: none;
+    float: right;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: Background;
+}
+.btn-btn-succes :hover{
+  background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+}
