@@ -2,7 +2,6 @@
 include "../admin/header.php";
 include "../conn/connection.php";
 ?>
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +13,8 @@ include "../conn/connection.php";
 </head>
 <body>
 <div class="page-title">
-=======
-
-          
                     <div class="page-title">
->>>>>>> 1f5eb2afc4e41bfab517f647783888af96452e91
+
                         <h1>Add Exam</h1>
                    
                     <form name="form1" action="" method="post">
