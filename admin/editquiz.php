@@ -13,7 +13,7 @@ include "../conn/connection.php";
          
  
     <input type="checkbox" id="check"> 
-    <!--header area start-->
+
     <header>
         <label for="check">
             <i class="fas fa-bars" id="sidebar_btn"></i>
@@ -27,8 +27,6 @@ include "../conn/connection.php";
         </div>
         
     </header>
-    <!--header area end-->
-    <!--sidebar start-->
         <div class="sidebar">
             <center>
                 <img src="../image/1.jpg" class="profile_image" alt="">
@@ -41,8 +39,7 @@ include "../conn/connection.php";
             <a href="../admin/postedquiz.php"><i class="fas fa-upload"></i><span>Posted Quiz</span></a>
             <a href="../admin/completedquiz.php"><i class="fas fa-check-double"></i><span>Completed Quiz</span></a>
         </div>
-    <!--sidebar end-->
-    
+
     <form action="">
     <div class="card-body">
     <table class="table-content">
