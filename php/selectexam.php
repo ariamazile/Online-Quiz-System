@@ -1,19 +1,12 @@
 <?php
 session_start();
 if(!isset($_SESSION["username"]))
-{
 
-    ?>
-    <script type="text/javascript">
-        window.location="login.php";
-    </script>
-    <?php
-}
 ?>
 
 
 <?php
-include "conn/connection.php";
+include "../conn/connection.php";
 ?>
 
 
@@ -42,6 +35,7 @@ function set_exam_type_session(quiz)
         if(xmlhttp.readyState==4 && xmlhttp.status==200){
 
             window.location="dashboard.php";
+
         }
     };
     xmlhttp.open("GET", "forajax/set_exam_type_session.php?quiz="+ quiz, true);

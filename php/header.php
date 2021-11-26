@@ -1,5 +1,5 @@
 <?php
-include "conn/connection.php";
+include "../conn/connection.php";
 session_start();
 if(!isset($_SESSION["username"]))
 
@@ -11,7 +11,7 @@ if(!isset($_SESSION["username"]))
     <head>   
 <meta charset="utf-8">
 <title>Dashboard</title>
-<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="../css/dashboard.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
@@ -31,7 +31,7 @@ if(!isset($_SESSION["username"]))
     
         <div class="sidebar">
             <center>
-                <img src="image/2.jpg" class="profile_image" alt="">
+                <img src="../image/2.jpg" class="profile_image" alt="">
                 <h4><?php echo $_SESSION["username"]; ?></h4>
             </center>
             <a href="selectexam.php"><i class="fas fa-history"></i></i><span>Select Exam</span></a>
