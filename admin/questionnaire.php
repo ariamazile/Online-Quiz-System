@@ -1,4 +1,4 @@
-    <?php
+<?php
     include "../conn/connection.php";
     $quiz_id=$_GET["id"];
     $exam_name='';
@@ -45,15 +45,14 @@
             <a href="../admin/createquiz.php"><i class="fas fa-plus-square"></i><span>Create Quiz</span></a>
             <a href="../admin/selectquestionnaire.php"><i class="fas fa-tasks"></i></i><span>Manage Questionnaire</span></a>
             <a href="../admin/editquiz.php"><i class="fas fa-edit"></i><span>Edit Quiz</span></a>
-            <a href="../admin/postedquiz.php"><i class="fas fa-upload"></i><span>Posted Quiz</span></a>
             <a href="../admin/completedquiz.php"><i class="fas fa-check-double"></i><span>Completed Quiz</span></a>
         </div>
     <!--sidebar end-->
     <form name="form1" action="" method="POST">
                         <div class="page-title">
-                            <h1>Add Question inside <?php echo "<font color='red'>" .$exam_name. "</font>"; ?></h1>
+                            <h1>Add Question in <?php echo "<font color='red'>" .$exam_name. "</font>"; ?></h1>
                         </div>
-        
+        <div class= "quiz">
                                 <form name="form1" action="" method="post">
                                 <div class="card-header"><strong>Add New Questions</strong>
                                     <div class="form-group"><label for="questions" class=" form-control-label">New Question </label><input type="text" name="question" placeholder="Add Question" class="form-control"></div>
@@ -64,7 +63,7 @@
                                     <div class="form-group"><label for="questions" class=" form-control-label">Add Answer </label><input type="text" name="answer" placeholder="Add Answer" class="form-control"></div>
                                             <input type="submit" name="submit1" value="Add Question" class="btn-btn-success">
                                         </div>                           
-
+</div>
                                 </div>
                             </form>
 
@@ -112,7 +111,7 @@
 <div class="col-lg-12">
 <div class="card">
 <div class="card-body">
-    <table class="table table-bordered">
+    <table class="table-content">
         <tr>
             <th>No</th>
             <th>Questions</th>

@@ -1,5 +1,6 @@
 <?php
 include "../conn/connection.php";
+include "../admin/header.php";
 $question_id=$_GET["id"];
 $id1=$_GET["id1"];
 
@@ -20,12 +21,12 @@ while($row=mysqli_fetch_array($res))
     $answer=$row["answer"];
 }
 ?>
-
+<link rel="stylesheet" href="../css/editquestion.css">
 <div class="page-title">
     <h1>Update Question</h1>
 </div>
 
-
+<div class="edit">
 <form name="form1" action="" method="POST">
 <form name="form1" action="" method="post">
 <div class="card-header"><strong>Update Questions</strong>
@@ -37,6 +38,7 @@ while($row=mysqli_fetch_array($res))
 <div class="form-group"><label for="questions" class=" form-control-label">Update Answer </label><input type="text" name="answer" placeholder="Add Answer" class="form-control" value="<?php echo $answer; ?>"></div>
 <input type="submit" name="submit1" value="Add Question" class="btn-btn-success">
 </div>                           
+</div>
 </div>
 </form>
 

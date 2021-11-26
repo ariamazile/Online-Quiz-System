@@ -146,10 +146,10 @@ label #sidebar_btn:hover{
     background: white;
     border-radius: 25px;
     border: 5px solid black;
-    height: 450px;
-    width: 450px;
+    height: 500px;
+    width: 600px;
 }
-.quiz {
+.edit {
     position: absolute;
     top: 33%;
     left: 20%;

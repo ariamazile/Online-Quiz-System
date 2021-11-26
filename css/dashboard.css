@@ -45,6 +45,7 @@ header{
 }
 
 .sidebar{
+    z-index: 1;
     background: #2f323a;
     margin-top: 70px;
     padding-top: 30px;

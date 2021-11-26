@@ -1,7 +1,7 @@
 <?php
 include "../conn/connection.php";
 session_start();
-if(!isset($_SESSION["username"]))
+if(!isset($_SESSION['first_name']))
 
 
 ?>
@@ -32,7 +32,7 @@ if(!isset($_SESSION["username"]))
         <div class="sidebar">
             <center>
                 <img src="../image/2.jpg" class="profile_image" alt="">
-                <h4><?php echo $_SESSION["username"]; ?></h4>
+                <h4><?php echo $_SESSION['first_name']; ?></h4>
             </center>
             <a href="selectexam.php"><i class="fas fa-history"></i></i><span>Select Exam</span></a>
             <a href="quiz_result.php"><i class="fas fa-history"></i></i><span>Quiz History</span></a>
