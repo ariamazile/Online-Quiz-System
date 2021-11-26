@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2021 at 06:27 PM
+-- Generation Time: Nov 26, 2021 at 06:19 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -66,7 +66,12 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`question_id`, `question_no`, `question`, `choices1`, `choices2`, `choices3`, `choices4`, `answer`, `title`) VALUES
-(10, '2', 'asdass', 'sad', 'sads', 'sd', 'd', 'd', 'PHP');
+(10, '2', 'asdass', 'sad', 'sads', 'sd', 'd', 'd', 'PHP'),
+(13, '1', 'asdadas?', 'qweqweq', 'qweqweqwq', 'qwe', '123', '123', 'HCI 101'),
+(14, '2', 'asdasda?as', 'asdasd', 'asdasd', 'aasa', '1234', '1234', 'PHP'),
+(15, '3', 'e123', 'w', 'wdsd', 'sd', 'zx', 'zx', 'PHP'),
+(16, '4', 'asasd', '123', 'x2', 'sda', 'asa', 'x2', 'PHP'),
+(17, '5', '2x42', 'x2x', 's2', 'd1', 'd2', 'd2', 'PHP');
 
 -- --------------------------------------------------------
 
@@ -85,7 +90,8 @@ CREATE TABLE `quiz` (
 --
 
 INSERT INTO `quiz` (`quiz_id`, `exam_name`, `quiz_time_in_minutes`) VALUES
-(1, 'PHP', 30);
+(1, 'PHP', 30),
+(12, 'HCI 101', 30);
 
 -- --------------------------------------------------------
 
@@ -95,8 +101,20 @@ INSERT INTO `quiz` (`quiz_id`, `exam_name`, `quiz_time_in_minutes`) VALUES
 
 CREATE TABLE `result` (
   `result_id` int(50) NOT NULL,
-  `score` int(50) NOT NULL
+  `username` varchar(50) NOT NULL,
+  `exam_type` varchar(50) NOT NULL,
+  `total_question` varchar(100) NOT NULL,
+  `correct_answer` varchar(10) NOT NULL,
+  `wrong_answer` varchar(10) NOT NULL,
+  `exam_time` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `result`
+--
+
+INSERT INTO `result` (`result_id`, `username`, `exam_type`, `total_question`, `correct_answer`, `wrong_answer`, `exam_time`) VALUES
+(1, '1801023', 'PHP', '5', '3', '2', '2021-11-26');
 
 -- --------------------------------------------------------
 
@@ -200,19 +218,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `question_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `question_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `quiz`
 --
 ALTER TABLE `quiz`
-  MODIFY `quiz_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `quiz_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `result`
 --
 ALTER TABLE `result`
-  MODIFY `result_id` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `result_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `students`
