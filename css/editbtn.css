@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.center{
+    position: fixed;
+    top: 34%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    background:  rgba(255,255,255, 0.9);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    height: 200px;
+    border-radius: 50px;
+    border: 2px solid black;
+  }
+  form .txt_field{
+    position: relative;
+    left: 40px;
+    width: 40%;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+  .txt_field input{
+    top: 30%;
+    width: 80%;
+    padding: 0 50px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .quiz-title{
+    position: fixed;
+    top: 23%;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    text-align: left;
+  }
+  .quiz-description{
+    position: fixed;
+    top: 23%;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    text-align: left;
+  }
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: gray;
+    transition: .5s;
+  }
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    color: gray;
+  }
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before{
+    width: 100%;
+  }
+  #edit{
+      height: 5px;
+      width: 80%;
+  }
+  .wrapper textarea{
+      width: 70%;
+      height: 50px;
+      padding-left: 15px;
+      outline: none;
+      resize: none;
+      font-size: 16px;
+      margin-left: 40px;
+      border-radius: 5px;
+      border-color: white;
+      border-bottom: 2px gray solid;
+  }
+  textarea:is(focus, valid){
+      border-color: none;
+  }
+  .box{
+    position: absolute;
+    top: 76%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background:  rgba(255,255,255, 0.9);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    height: 285px;
+    border-radius: 50px;
+    border: 2px solid black;
+  }
+  .wrapper1 textarea{
+    padding-top: 17px;
+    width: 80%;
+    height: 40px;
+    padding-left: 15px;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    margin-left: 40px;
+    border-radius: 5px;
+    border-color: white;
+    border-bottom: 2px gray solid;
+}
+.page-title {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  left: 35%;
+  background: white;
+  border-radius: 25px;
+  border: 5px solid black;
+  height: 400px;
+  width: 600px;
+}
+.btn-btn-success{
+    position: absolute;
+    top: 60%;
+    left: 53%;
+    padding: 10px 20px;
+    background: black;
+    text-decoration: none;
+    float: right;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: Background;
+}
+.btn-btn-succes :hover{
+  background: #aa4b6b;
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+}
+.editbtn{
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+.btn-btn-success{
+  position: absolute;
+  top: 200%;
+  left: 45%;
+}
