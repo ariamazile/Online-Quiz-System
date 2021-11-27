@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2021 at 06:19 AM
+-- Generation Time: Nov 27, 2021 at 04:21 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -66,12 +66,11 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`question_id`, `question_no`, `question`, `choices1`, `choices2`, `choices3`, `choices4`, `answer`, `title`) VALUES
-(10, '2', 'asdass', 'sad', 'sads', 'sd', 'd', 'd', 'PHP'),
-(13, '1', 'asdadas?', 'qweqweq', 'qweqweqwq', 'qwe', '123', '123', 'HCI 101'),
-(14, '2', 'asdasda?as', 'asdasd', 'asdasd', 'aasa', '1234', '1234', 'PHP'),
-(15, '3', 'e123', 'w', 'wdsd', 'sd', 'zx', 'zx', 'PHP'),
-(16, '4', 'asasd', '123', 'x2', 'sda', 'asa', 'x2', 'PHP'),
-(17, '5', '2x42', 'x2x', 's2', 'd1', 'd2', 'd2', 'PHP');
+(18, '1', 'What is PHP?', 'PHP is a web language based on scripts that allow ', 'PEAR means “PHP Extension and Application Reposito', 'PHP 5 presents many additional OOP (Object Oriente', 'PHP supports only single inheritance; it means tha', 'PHP is a web language based on scripts that allow developers to dynamically create generated web pages.', 'PHP'),
+(19, '2', '2) What do the initials of PHP stand for?', 'PHP: Hypertext Preprocessor.', 'Preprocessor Hypertext', 'Philippines Hyperx', 'None of the above', 'PHP: Hypertext Preprocessor.', 'PHP'),
+(20, '3', 'Which programming language does PHP resemble?', 'PHP syntax resembles Perl and C', 'PHP syntax resembles Perl and B', 'PHP syntax resembles Perl and A', 'PHP syntax resembles Perl and D', 'PHP syntax resembles Perl and C', 'PHP'),
+(21, '4', 'PHP server scripts are surrounded by delimiters, which?', '<?php>...</?>', '<?php...?>', '<script>...</script>', '<&>...</&>', '<?php...?>', 'PHP'),
+(23, '6', 'How do you write \"Hello World\" in PHP', 'Document.Write(\"hello world\")', '\"Hello World\";', 'echo \"Hello World\";', '<h1> Hello Word </h1>', 'echo \"Hello World\";', 'PHP');
 
 -- --------------------------------------------------------
 
@@ -218,7 +217,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `question_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `question_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `quiz`
