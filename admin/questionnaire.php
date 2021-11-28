@@ -18,7 +18,6 @@
 </head>
 <body>
          
- 
     <input type="checkbox" id="check"> 
     <!--header area start-->
     <header>

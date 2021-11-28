@@ -6,6 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 body{
+  overflow: scroll;
   margin: 0;
   padding: 0;
   height: 100vh;
